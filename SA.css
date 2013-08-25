@@ -1,0 +1,198 @@
+body{
+  background: #333;
+}
+
+ul{
+  width:640px;
+  margin:70px 300px;
+  /*border-bottom: 3px solid #222;*/
+  height:40px;
+  -webkit-animation: move 6500ms infinite;
+}
+ 
+li{
+  display:block;
+  float:left;
+  width:40px;
+  height:20px;
+  margin-left:-8px;
+  border-radius:15px;
+  background:green;
+  border:2px solid darkgreen;
+}
+
+li:nth-child(1){
+  -webkit-animation-delay: 200ms;
+  -webkit-animation: worm0 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(2){
+  -webkit-animation-delay: 0ms;
+  -webkit-animation: worm1 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(3){
+  -webkit-animation-delay: 300ms;
+  -webkit-animation: worm2 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(4){
+  -webkit-animation-delay: 500ms;
+  -webkit-animation: worm3 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(5){
+  -webkit-animation-delay: 700ms;
+  -webkit-animation: worm4 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(6){
+  -webkit-animation-delay: 900ms;
+  -webkit-animation: worm5 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(7){
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation: worm0 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(8){
+  -webkit-animation-delay: 300ms;
+  -webkit-animation: worm1 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(9){
+  -webkit-animation-delay: 100ms;
+  -webkit-animation: worm2 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(10){
+  -webkit-animation-delay: 300ms;
+  -webkit-animation: worm3 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(11){
+  -webkit-animation-delay: 340ms;
+  -webkit-animation: worm4 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(12){
+  -webkit-animation-delay: 200ms;
+  -webkit-animation: worm5 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(13){
+  -webkit-animation-delay: 100ms;
+  -webkit-animation: worm0 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(14){
+  -webkit-animation-delay: 200ms;
+  -webkit-animation: worm1 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(15){
+  -webkit-animation-delay: 20ms;
+  -webkit-animation: worm2 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+li:nth-child(16){
+  -webkit-animation-delay: 100ms;
+  -webkit-animation: worm5 1300ms infinite,
+    crawl 1500ms ease infinite;
+}
+
+@-webkit-keyframes worm0 {
+  50%{
+     -webkit-transform: translateY(-7px) translateX(10px);
+     margin-left:-25px;
+  }
+}
+
+@-webkit-keyframes worm1 {
+  50%{
+     -webkit-transform: translateY(-15px) translateX(5px) rotate(-5deg);
+  }
+}
+
+@-webkit-keyframes worm2 {
+  50%{
+     -webkit-transform: translateY(-20px) translateX(3px) rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes worm3 {
+  50%{
+     -webkit-transform: translateY(-25px) translateX(0px) rotate(2deg);
+  }
+}
+
+@-webkit-keyframes worm4 {
+  50%{
+     -webkit-transform: translateY(-20px) translateX(2px) rotate(-5deg) rotate(10deg);
+  }
+}
+
+@-webkit-keyframes worm5 {
+  50%{
+     -webkit-transform: translateY(-15px) translateX(4px) rotate(5deg);
+  }
+}
+
+@-webkit-keyframes worm6 {
+  50%{
+     -webkit-transform: translateY(-27px) translateX(0px);
+  }
+}
+
+
+.eye{
+  float:left;
+  margin: -12px 7px 2px 15px;
+  background:white;
+  width:18px;
+  height:18px;
+  border-radius:15px;
+}
+
+.iris{
+  margin: 2px 7px;
+  background:black;
+  width:8px;
+  height:8px;
+  border-radius:5px;
+}
+
+
+@-webkit-keyframes move {
+  10%{
+     -webkit-transform: translateX(50px);
+  }
+  20%{
+     -webkit-transform: translateX(100px);
+  }
+  30%{
+     -webkit-transform: translateX(150px);
+  }
+  40%{
+     -webkit-transform: translateX(200px);
+  }
+  50%{
+     -webkit-transform: translateX(250px);
+  }
+  60%{
+     -webkit-transform: translateX(300px);
+  }
+  70%{
+     -webkit-transform: translateX(350px);
+  }
+  80%{
+     -webkit-transform: translateX(400px);
+  }
+  90%{
+     -webkit-transform: translateX(450px);
+  }
+  100%{
+     -webkit-transform: translateX(500px);
+  }
+}
